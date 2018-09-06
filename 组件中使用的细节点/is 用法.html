@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <table>
+            <tbody>
+                <tr is="row"></tr>
+                <tr is="row"></tr>
+                <tr is="row"></tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        Vue.component('row',{
+            template:'<tr><td>123</td></tr>'
+        })
+        var vm = new Vue({
+            el:"#root"
+        })
+    </script>
+</body>
+</html>
